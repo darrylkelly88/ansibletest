@@ -4,6 +4,6 @@
   become: true
   tasks:
     - name: Clone git to a local server
-        git:
-          repo: https://github.com/darrylkelly88/ansibletest.git
-          dest: /var/www/
+      git:
+        repo: https://github.com/darrylkelly88/ansibletest.git
+        dest: /var/www/
