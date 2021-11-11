@@ -1,4 +1,4 @@
-- name: application deployment
+- name: open web port
   hosts: web
   gather_facts: false
   become: true
