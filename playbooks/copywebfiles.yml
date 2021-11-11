@@ -7,6 +7,8 @@
       dnf:
         name: git
         state: present
+    - name: ensure /var/www is empty
+        shell: /bin/rm -rf /var/www/*
     - name: Clone git to a local server
       git:
         repo: https://github.com/darrylkelly88/ansibletest.git
