@@ -12,7 +12,7 @@
       debug:
         msg: "This Ansible Playbook will uninstall {{application}}"
 
-    - name: install application
+    - name: uninstall application
       dnf:
         name: "{{application}}"
         state: absent
@@ -25,5 +25,5 @@
 
     - name: printing to terminal application information
       debug:
-        msg: "The application: {{application}} was already uninstalled"
+        msg: "The application: {{application}} was not present"
       when: not result.changed|bool
