@@ -1,8 +1,9 @@
 - name: application deployment
-hosts: "{{hosts}}"
-gather_facts: false
-become: true
-  - name: Clone git to a local server
+  hosts: "{{hosts}}"
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Clone git to a local server
         git:
           repo: https://github.com/darrylkelly88/ansibletest.git
           dest: /var/www/
