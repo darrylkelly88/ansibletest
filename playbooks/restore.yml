@@ -1,3 +1,8 @@
-- name: printing to terminal application information
-  debug:
-    msg: "Task failed running restore job"
+- name: application deployment
+  hosts: web
+  gather_facts: false
+  become: true
+  tasks:
+    - name: task failed, performing restore from backup
+      debug:
+        msg: "Task failed running restore job"
