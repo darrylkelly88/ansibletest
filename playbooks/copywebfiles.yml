@@ -1,4 +1,4 @@
-- name: application deployment
+- name: deploy website
   hosts: "{{hosts}}"
   gather_facts: false
   become: true
