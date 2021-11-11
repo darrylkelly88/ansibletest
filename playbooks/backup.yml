@@ -3,6 +3,6 @@
   gather_facts: false
   become: true
   tasks:
-    - name: printing to terminal application information
+    - name: simulating a backup job
       debug:
         msg: "This has run a simulated backup job"
