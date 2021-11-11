@@ -1,3 +1,8 @@
-- name: printing to terminal application information
-  debug:
-    msg: "This has run a simulated backup job"
+- name: backup
+  hosts: web
+  gather_facts: false
+  become: true
+  tasks:
+    - name: printing to terminal application information
+      debug:
+        msg: "This has run a simulated backup job"
