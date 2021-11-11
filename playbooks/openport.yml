@@ -1,5 +1,5 @@
 - name: open web port
-  hosts: web
+  hosts: "{{hosts}}"
   gather_facts: false
   become: true
   tasks:
