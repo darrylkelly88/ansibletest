@@ -1,0 +1,3 @@
+- name: printing to terminal application information
+  debug:
+    msg: "This has run a simulated backup job"
