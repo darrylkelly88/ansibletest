@@ -4,8 +4,8 @@
   become: true
   tasks:
     - name: enable port 80
-          firewalld:
-            zone: public
-            port: 80/tcp
-            permanent: true
+        firewalld:
+          zone: public
+          port: 80/tcp
+          permanent: true
             state: enabled
