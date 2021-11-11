@@ -13,3 +13,7 @@
       git:
         repo: https://github.com/darrylkelly88/ansibletest.git
         dest: /var/www/html
+    - name: restart apache
+      service:
+        name: httpd
+        state: restarted
