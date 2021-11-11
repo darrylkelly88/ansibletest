@@ -1,5 +1,5 @@
 - name: install apache
-  hosts: web
+  hosts: "{{hosts}}"
   gather_facts: false
   become: true
   tasks:
